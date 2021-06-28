@@ -1,0 +1,22 @@
+<div class="padded-container details-page"> 
+    <img src="{{movie.image}}" class="right-padding">
+
+    <div> 
+        <a href="/movies" class="a-underline">Go back</a>
+
+        <h2>{{movie.title}}</h2>
+        <h3>Director: {{movie.director}}</h3>
+
+        <h4>Stars</h4>
+        <ul>
+            {{#each movie.stars}}
+             <li>{{this}}</li>
+            {{/each}}
+        </ul>
+
+        <p>{{movie.description}}</p>
+        <p>{{movie.showtimes }}</p>
+
+    </div>
+
+</div>
